@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products PG</title>
+    <link rel="stylesheet" href="styleproject.css">
+</head>
+<body>
+    <header>
+        <a href="LogoPG.png"> <img src="LogoPG.png" alt="Logo PG" style="width:200px;height:70px;"> </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="#">Product PG</a>
+            <a href="contact us.html">Contact Us</a>
+            <a href="faq.html">FAQs</a>
+        </nav>
+    </header>
+    <section class="image-gallery">
+    <h2>Public Gold Products</h2>
+    <div class="gallery">
+        
+        <div class="image-item">
+            <img src="1gramgoldbar.png" alt="1 Gram Goldbar Classic">
+            <p><strong>1 Gram Gold Bar Classic</strong><br>Ketulenan: 24 Karat<br>Berat: 1 Gram</p>
+        </div>
+           
+        <div class="image-item">
+            <img src="1.2dinar.png" alt="1/2 Dinar">
+            <p><strong>1/2 Dinar</strong><br>Ketulenan: 24 Karat<br>Berat: 2.125 Gram</p>
+        </div>
+
+            <div class="image-item">
+            <img src="1dinar.png" alt="1 Dinar">
+            <p><strong>1 Dinar</strong><br>Ketulenan: 24 Karat<br>Berat: 4.25 Gram</p>
+        </div>
+       
+        <div class="image-item">
+            <img src="5dinar.png" alt="5 Dinar">
+            <p><strong>5 Dinar</strong><br>Ketulenan: 24 Karat<br>Berat: 21.25 Gram</p>
+        </div>
+
+        <div class="image-item">
+            <img src="10dinar.png" alt="10 Dinar">
+            <p><strong>10 Dinar</strong><br>Ketulenan: 24 Karat<br>Berat: 42.5 Gram</p>
+        </div>
+
+        
+        <div class="image-item">
+            <img src="5grambungaemas.png" alt="5 Gram BungaMas">
+            <p><strong>5 Gram BungaMas</strong><br>Ketulenan: 24 Karat<br>Berat: 5 Gram</p>
+        </div>
+
+        
+        <div class="image-item">
+            <img src="10grambunga.png" alt="10 Gram BungaMas">
+            <p><strong>10 Gram BungaMas</strong><br>Ketulenan: 24 Karat<br>Berat: 10 Gram</p>
+        </div>
+
+        <div class="image-item">
+            <img src="20grambunga.png" alt="20 Gram BungaMas">
+            <p><strong>20 Gram BungaMas</strong><br>Ketulenan: 24 Karat<br>Berat: 20 Gram</p>
+        </div>
+        
+        <div class="image-item">
+            <img src="50grambunga.png" alt="50 Gram BungaMas">
+            <p><strong>50 Gram BungaMas</strong><br>Ketulenan: 24 Karat<br>Berat: 50 Gram</p>
+        </div>
+
+        <div class="image-item">
+            <img src="100grambunga.png" alt="100 Gram BungaMas">
+            <p><strong>100 Gram BungaMas</strong><br>Ketulenan: 24 Karat<br>Berat: 100 Gram</p>
+        </div>
+
+        <div class="image-item">
+            <img src="10gramtaifook.png" alt="10 Gram Tai Fook">
+            <p><strong>10 Gram Tai Fook</strong><br>Ketulenan: 24 Karat<br>Berat: 10 Gram</p>
+        </div>
+
+        <div class="image-item">
+            <img src="20gramtaifook.png" alt="20 Gram Tai Fook">
+            <p><strong>20 Gram Tai Fook</strong><br>Ketulenan: 24 Karat<br>Berat: 20 Gram</p>
+        </div>
+
+        <div class="image-item">
+            <img src="50gramtaifook.png" alt="50 Gram Tai Fook">
+            <p><strong>50 Gram Tai Fook</strong><br>Ketulenan: 24 Karat<br>Berat: 50 Gram</p>
+        </div>
+
+        <div class="image-item">
+            <img src="100gramtaifook.png" alt="100 Gram Tai Fook">
+            <p><strong>100 Gram Tai Fook</strong><br>Ketulenan: 24 Karat<br>Berat: 100 Gram</p>
+        </div>
+
+        <div class="image-item">
+            <img src="250gramgoldbar.png" alt="250 Gram Goldbar">
+            <p><strong>250 Gram Gold Bar</strong><br>Ketulenan: 24 Karat<br>Berat: 250 Gram</p>
+        </div>
+
+        <div class="image-item">
+            <img src="1000gramgoldbar.png" alt="1000 Gram Goldbar">
+            <p><strong>1000 Gram Gold Bar</strong><br>Ketulenan: 24 Karat<br>Berat: 1000 Gram</p>
+        </div>
+    </div>
+</section>
+
+
+<button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
+        <footer>
+        <p>&copy; 2025 Public Gold Product</p>
+    </footer>
+
+  <script>
+    
+    window.onscroll = function() { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.querySelector(".back-to-top").style.display = "block";
+        } else {
+            document.querySelector(".back-to-top").style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+    }
+
+    
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImage");
+    var captionText = document.getElementById("caption");
+
+    function openModal(imageSrc, altText) {
+        modal.style.display = "block";
+        modalImg.src = imageSrc;
+        captionText.innerHTML = altText;
+    }
+
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    
+    document.querySelectorAll('.image-item img').forEach(img => {
+        img.addEventListener('click', function() {
+            openModal(this.src, this.alt);
+        });
+    });
+
+    
+    modal.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+</script>
+</body>
+</html>

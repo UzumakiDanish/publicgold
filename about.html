@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="LogoPG.png" alt="Logo PG" style="width:200px;height:70px;">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About Us</a>
+            <a href="product.html">Product PG</a>
+            <a href="contact us.html">Contact Us</a>
+            <a href="faq.html">FAQs</a>
+        </nav>
+    </header>
+
+
+    <div class="container1">
+        <section id="what-is-public-gold">
+            <img src="gold.png" alt="Gold products">
+            <div class="section-content">
+                <h2>What is Public Gold?</h2>
+                <p>Public Gold is a reputable company specializing in the trade of gold and silver bullion in Malaysia. Founded in 2008, it offers products like gold bars, dinar coins, and silver bars. Public Gold is known for its Shariah-compliant investment options, making it a trusted choice for halal investments.</p>
+            </div>
+        </section>
+
+        <section id="why-choose-public-gold">
+            <img src="people.png" alt="People choosing Public Gold">
+            <div class="section-content">
+                <h2>Why Choose Public Gold?</h2>
+                <ul>
+                    <li>Shariah-compliant investment opportunities.</li>
+                    <li>Transparent pricing and real-time price updates.</li>
+                    <li>Wide range of products including gold and silver bullion.</li>
+                    <li>Secure storage and convenient buy-back services.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="public-gold-price">
+            <div class="section-image">
+                <img src="price.png" alt="Gold price trends">
+            </div>
+            <div class="section-content">
+                <h2>Public Gold Price</h2>
+                <table>
+                    <tr>
+                        <th>Goldbar & Dinar (24K)</th>
+                        <th>Akaun Emas GAP (24K)</th>
+                        <th>Silverbar & Dirham (999)</th>
+                    </tr>
+                    <tr>
+                        <td>10 gram - RM 4,221</td>
+                        <td>RM 100 = 0.2364 gram</td>
+                        <td>100 gram - RM 545</td>
+                    </tr>
+                </table>
+                <div class="calculator">
+                    <h3>Gold Price Calculator</h3>
+                    <label for="weight">Enter gold weight (grams): </label>
+                    <input type="number" id="weight" placeholder="1" min="0" step="0.01">
+                    <button onclick="calculateGoldPrice()">Calculate</button>
+                    <output id="result">RM 0.00</output>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-to-buy">
+            <img src="how.png" alt="How to buy gold">
+            <div class="section-content">
+                <h2>How to Buy Gold from Public Gold</h2>
+                <ol>
+                    <li>Visit the official Public Gold website.</li>
+                    <li>Create an account or log in.</li>
+                    <li>Browse the available products and add them to your cart.</li>
+                    <li>Proceed to checkout and follow the payment instructions.</li>
+                    <li>Choose delivery or pick-up options as available.</li>
+                </ol>
+            </div>
+        </section>
+    </div>
+
+    
+    <footer>
+        <p>© 2025 Public Gold | About Us</p>
+    </footer>
+
+    <script>
+        function calculateGoldPrice() {
+            const pricePerGram = 422.10;
+            const weight = document.getElementById('weight').value;
+            const total = weight * pricePerGram;
+            document.getElementById('result').textContent = `RM ${total.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>

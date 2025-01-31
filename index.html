@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="LogoPG.png" alt="Logo PG" style="width:200px;height:70px;">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="product.html">Product PG</a>
+            <a href="contact us.html">Contact Us</a>
+            <a href="faq.html">FAQs</a>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <h1>Hi, Assalamualaikum. Welcome to</h1>
+        <h1 class="gold-text">Public Gold</h1>
+        <p>We take pride in being the leading gold and silver trading company in Malaysia, serving multiple regions.</p>
+        
+        <div class="container2">
+            <div class="title">The Largest Gold Trading Company in Malaysia</div>
+            <div class="stats">
+                <div class="stat-item"><div class="stat-number">17</div><div class="stat-label">Years of Operation</div></div>
+                <div class="stat-item"><div class="stat-number">23</div><div class="stat-label">Branches</div></div>
+                <div class="stat-item"><div class="stat-number">1.5 Million</div><div class="stat-label">Registered Members</div></div>
+                <div class="stat-item"><div class="stat-number">5</div><div class="stat-label">Countries</div></div>
+            </div>
+        </div>
+        
+        <h1>The Logo Of Public Gold</h1>
+        <img src="LogoPG2.jpg" alt="Public Gold Secondary Logo" class="square-image" style="center">
+
+        <h1>Our Location</h1>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.184495833058!2d101.7090744!3d3.1435187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3630545275eb%3A0xd4556924b6a9fc5c!2sMenara%20Public%20Gold%20%40%20TRX!5e0!3m2!1sen!2smy!4v1700000000000" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2025 Public Gold | Home</p>
+    </footer>
+    
+    <script>
+        let currentSlide = 0;
+        function changeSlide(n) {
+            let slides = document.querySelectorAll('.slide');
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+    </script>
+</body>
+</html>

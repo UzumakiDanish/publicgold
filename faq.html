@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="LogoPG.png">
+            <img src="LogoPG.png" alt="Logo PG" style="width:200px;height:70px;">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="product.html">Product PG</a>
+            <a href="contact us.html">Contact Us</a>
+            <a href="#">FAQs</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="faq-title"><b>Frequently Asked Questions (FAQs)</b></div>     
+        <div class="faq-item">
+            <button onclick="toggleFaq(this)">ASB, Tabung Haji, or gold, which is better?</button>
+            <div class="faq-content">
+                <p>For <b>short-term savings (less than 2 years), ASB or Tabung Haji is better.</b> The returns are consistent around 4% - 5% per year.</p>
+                <br>But for <b>the long term, gold is better.</b> Its value is more guaranteed and is not affected regardless of the economic or political situation of a country.</br>
+                <br>Although the price of gold fluctuates in the short term, 20-year history shows that <b>the price of gold has increased on average by around 10% per year.</b> The price of gold is confirmed to increase in the long term due to inflation and the fall of the ringgit.</br>
+                <br><b>For short-term savings, save in ASB or Tabung Haji. For the long term, save in the form of gold.</b></br>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <button onclick="toggleFaq(this)">Jewelry, gold bars, or dinars, which is better?</button>
+            <div class="faq-content">
+                <p>If you buy gold for savings or investment purposes, <b>gold bars or dinars (purity 999.9) are more profitable.</b></p>
+                <br>The price per gram is about 15% cheaper than jewelry, the spread ('depreciation') is also much lower (less than 10%).</br>
+                <br>Jewelry is not suitable for savings or investment purposes. It is only suitable for decoration.</br>
+                <br>The price is more expensive, there are charges for craftsmen's wages, and the spread is very high (around 25% - 40%). It is a loss.</br>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <button onclick="toggleFaq(this)">When is the best time to buy gold?</button>
+            <div class="faq-content">
+                <p><b>The best time is when you have money to save for at least 2 years and above,</b> and you already understand the most basic things about gold.</p>
+                <br>Don't wait for the best price, because no one knows when the gold price will be the lowest, unless that price is already history.</br>
+                <br>In the short term, the price of gold does fluctuate. But in the long term, the price of gold is guaranteed to rise due to the purchasing power of paper money that is constantly declining.</br>
+                <br>To understand the high and low price of gold, start with the first purchase of at least 1 gram to use as a benchmark.</br>
+                <br>As long as physical gold is in hand, and we buy for long-term savings, the risk of loss is very small.</br>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <button onclick="toggleFaq(this)">What is the minimum budget to start saving gold?</button>
+            <div class="faq-content">
+                <p>With Public Gold, you can start saving gold with <b>a budget as low as RM100</b> through the GAP Gold Account. And you can increase your savings at any time with a budget of RM100 per purchase.</p>
+                <br>There is <b>no requirement to buy every month.</b></br>
+                <br>The smallest item that can be withdrawn from the GAP Account is a 1 gram gold bar (999.9 purity) of various designs.</br>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <button onclick="toggleFaq(this)">How much gold is subject to zakat?</button>
+            <div class="faq-content">
+                <p>Gold savings are subject to <b>2.5%</b> zakat if they are <b>85 grams</b> (equivalent to 20 dinars), and are kept for a minimum period of 1 year (based on the Hijri calendar).</p>
+                <br>Jewelry is also subject to zakat if the amount of gold exceeds the uruf set by the Islamic Religious Council (according to each state).</br>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <button onclick="toggleFaq(this)">Can I buy directly by walk-in at the nearest Public Gold branch?</button>
+            <div class="faq-content">
+                <p>Public Gold <b>does not accept walk-in purchases.</b></p>
+                <br>For the convenience of almost 1 million customers, Public Gold branches only provide services for customers who want to collect large-sized gold items (which cannot be sent via GIT i.e. insured postage), namely items 50 grams / 10 dinars (42.5 grams) and above.</br>
+                <br>To come and collect gold, you must order, make payment, and make an appointment in advance.</br>
+                <br>For small items (items 5 dinars / 20 grams and below), Public Gold will post directly from the Penang HQ using the Gold-in-Transit (GIT) service.</br>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const isActive = content.classList.contains('active');
+            document.querySelectorAll('.faq-content').forEach(c => c.classList.remove('active'));
+            document.querySelectorAll('.faq-item button').forEach(b => b.classList.remove('active'));
+            if (!isActive) {
+                content.classList.add('active');
+                button.classList.add('active');
+            }
+        }
+    </script>
+    
+    <footer>
+        <p>© 2025 Public Gold | FAQs</p>
+    </footer>
+</body>
+</html>
